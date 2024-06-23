@@ -24,7 +24,7 @@ from config import NOTIFY_DAYS_LEFT, NOTIFY_REACHED_USAGE_PERCENT
 
 
 def add_default_host(db: Session, inbound: ProxyInbound):
-    host = ProxyHost(remark="🚀 Marz ({USERNAME}) [{PROTOCOL} - {TRANSPORT}]", address="{SERVER_IP}", inbound=inbound)
+    host = ProxyHost(remark="🚀 GLine ({USERNAME}) [{PROTOCOL} - {TRANSPORT}]", address="{SERVER_IP}", inbound=inbound)
     db.add(host)
     db.commit()
 
